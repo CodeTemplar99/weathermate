@@ -35,7 +35,7 @@
 
 <div class="jumbotron bg-white p-1 mb-0 mt-1 mx-1 rounded border shadow-sm">
   <form class="d-flex justify-content-start" (ngSubmit)='search(searchForm)' #searchForm='ngForm'>
-    <div class="form-group col-3">
+    <div class="form-group col-4">
       <label *ngIf="lo.invalid && (lo.dirty || lo.touched)"><span class="text-danger" *ngIf='lo.errors'>
           Location is required.
         </span>
