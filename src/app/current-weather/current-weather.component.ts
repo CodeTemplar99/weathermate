@@ -37,7 +37,7 @@ export class CurrentWeatherComponent implements OnInit {
           this.msg = err.error.message;
           return;
         }
-        alert('Failed to get weather.');
+        alert('Failed to get weather info.');
       }, () => {
 })
   }
