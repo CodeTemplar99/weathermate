@@ -1,3 +1,19 @@
+.ballon-img{
+height: 200px;
+width: 200px;
+}
+
 .temprature{
   font-size: 400%;
+}
+
+td{
+  vertical-align: middle !important;
+}
+
+td .lead{
+  font-weight: lighter !important;
+}
+.weather-info{
+  font-weight: normal !important;
 }

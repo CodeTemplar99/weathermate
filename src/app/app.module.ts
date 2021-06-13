@@ -20,6 +20,7 @@ import { FormsModule } from '@angular/forms';
 import { WeatherService } from './services/weather.service';
 import { CurrentWeatherComponent } from './current-weather/current-weather.component';
 import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,

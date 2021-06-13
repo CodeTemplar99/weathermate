@@ -1,6 +1,9 @@
 <div class="weather-body-flex mt-5 d-flex justify-content-between">
   <div class="jumbotron p-4 m-0 bg-light d-flex flex-column justify-content-between align-items-around col-7">
     <a class="navbar-brand" href="#">Weather.io [beta]</a>
+    <div class="jumbotron d-flex justify-content-end p-3">
+      <img class="img-fluid ballon-img" src="assets/images/air-balloon.png" alt="">
+    </div>
     <div class="d-flex justify-content-start align-items-center">
 
       <h1 class="mx-4 temprature">{{currentWeather.main?.temp - 273.15 | number:'1.0-0'}}<sup>o</sup>C</h1>
@@ -11,71 +14,73 @@
       </div>
     </div>
   </div>
-  <div class="jumbotron p-4 m-0 bg-secondary col-5">
-    <table *ngIf='resultFound()'>
+  <div class="jumbotron p-4 m-0 bg-white border col-5">
+    <table *ngIf='resultFound()' class="table p-0">
       <tbody>
         <tr>
           <td>
-            <h5>Maximum Temperature:</h5>
+            <h6 class="lead m-0"> <span><i class="fa fa-thermometer-full"></i></span> Maximum Temperature:</h6>
           </td>
           <td>
-            <h5>{{currentWeather.main?.temp - 273.15 | number:'1.0-0'}}<sup>o</sup>C</h5>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <h5>Minimum Temperature:</h5>
-          </td>
-          <td>
-            <h5>{{currentWeather.main?.temp_min - 273.15 | number:'1.0-0'}}<sup>o</sup>C</h5>
+            <h6 class="weather-info m-0"> {{currentWeather.main?.temp - 273.15 | number:'1.0-0'}}<sup>o</sup>C</h6>
           </td>
         </tr>
         <tr>
           <td>
-            <h5>Clouds:</h5>
+            <h6 class="lead m-0"> <span><i class="fa fa-thermometer-half"></i></span> Minimum Temperature:</h6>
           </td>
           <td>
-            <h5>{{currentWeather.clouds?.all}}%</h5>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <h5>Humidity</h5>
-          </td>
-          <td>
-            <h5>{{currentWeather.main?.humidity}}%</h5>
+            <h6 class="weather-info m-0"> {{currentWeather.main?.temp_min - 273.15 | number:'1.0-0'}}<sup>o</sup>C</h6>
           </td>
         </tr>
         <tr>
           <td>
-            <h5>Pressure</h5>
+            <h6 class="lead m-0"> <span><i class="fa fa-cloud"></i></span> Clouds:</h6>
           </td>
           <td>
-            <h5>{{currentWeather.main?.pressure}}mb</h5>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <h5>Sunrise</h5>
-          </td>
-          <td>
-            <h5>{{currentWeather.sys?.sunrise*1000 | date:'long'}}</h5>
+            <h6 class="weather-info m-0"> {{currentWeather.clouds?.all}}%</h6>
           </td>
         </tr>
         <tr>
           <td>
-            <h5>Sunset</h5>
+            <h6 class="lead m-0"> <span><i class="fa fa-tint"></i></span> Humidity</h6>
           </td>
           <td>
-            <h5>{{currentWeather.sys?.sunset*1000 | date:'long'}}</h5>
+            <h6 class="weather-info m-0"> {{currentWeather.main?.humidity}}%</h6>
           </td>
         </tr>
         <tr>
           <td>
-            <h5>Visibility</h5>
+            <h6 class="lead m-0"> <span><i class="fa fa-arrow-down"></i></span> Pressure</h6>
           </td>
           <td>
-            <h5>{{currentWeather.visibility}}m</h5>
+            <h6 class="weather-info m-0"> {{currentWeather.main?.pressure}}mb</h6>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h6 class="lead m-0"> <span><i class="fa fa-sun-o"></i><i class="fa fa-caret-up"></i></span> Sunrise</h6>
+          </td>
+          <td>
+            <h6 class="weather-info m-0"> {{currentWeather.sys?.sunrise*1000 | date:'long'}}
+            </h6>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h6 class="lead m-0"> <span><i class="fa fa-sun-o"></i><i class="fa fa-caret-down"></i></span> Sunset</h6>
+          </td>
+          <td>
+            <h6 class="weather-info m-0"> {{currentWeather.sys?.sunset*1000 | date:'long'}}
+            </h6>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h6 class="lead m-0"> <span><i class="fa fa-eye"></i></span> Visibility</h6>
+          </td>
+          <td>
+            <h6 class="weather-info m-0"> {{currentWeather.visibility}}m</h6>
           </td>
         </tr>
       </tbody>
