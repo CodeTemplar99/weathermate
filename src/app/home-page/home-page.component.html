@@ -1,11 +1,14 @@
 <app-nav-bar></app-nav-bar>
-<div id='container'>
-  <div *ngIf='!loc' id='search'>
-    <h1>Enter location to find weather info.</h1>
+<div class="jumbotron mt-0 d-flex justify-content-center align-items-center">
+  <div class="mt-5" *ngIf='!loc' id='search'>
+    <h1 class="lead m-0">Enter location to find weather info.</h1>
   </div>
   <div *ngIf='loc'>
-    <div label="Current Weather">
+    <div class="m-0 mt-1 bg-danger" label="Current Weather">
       <app-current-weather></app-current-weather>
     </div>
   </div>
 </div>
+<!-- <div class="bg-dark text-white">
+  <p class="text-center p-4 m-0">Footer Content</p>
+</div> -->
