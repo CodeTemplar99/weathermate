@@ -14,12 +14,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // } from '@angular/material';
 import { HomePageComponent } from './home-page/home-page.component';
 import { StoreModule } from '@ngrx/store';
-import { locationReducer } from './reducers/reducer';
+import { cordReducer, locationReducer } from './reducers/reducer';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { FormsModule } from '@angular/forms';
 import { WeatherService } from './services/weather.service';
+import { CordService} from './services/cordweather.service';
 import { CurrentWeatherComponent } from './current-weather/current-weather.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CordsWeatherComponent } from './cords-weather/cords-weather.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,7 @@ import { HttpClientModule } from '@angular/common/http';
     HomePageComponent,
     NavBarComponent,
     CurrentWeatherComponent,
+    CordsWeatherComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,7 +38,9 @@ import { HttpClientModule } from '@angular/common/http';
     // MatButtonModule,
     // MatToolbarModule,
     StoreModule.forRoot({
-      loc: locationReducer
+      loc: locationReducer,
+      lat: cordReducer,
+      lon: cordReducer
     }),
     FormsModule,
     // MatInputModule,
@@ -46,7 +51,8 @@ import { HttpClientModule } from '@angular/common/http';
     // MatListModule
   ],
   providers: [
-    WeatherService
+    WeatherService,
+    CordService
   ],
   bootstrap: [AppComponent]
 })

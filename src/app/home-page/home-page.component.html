@@ -1,7 +1,10 @@
 <app-nav-bar></app-nav-bar>
 <div class="jumbotron mt-0 d-flex justify-content-center align-items-center">
   <div class="mt-5" *ngIf='!loc' id='search'>
-    <h1 class="lead m-0">Enter location to find weather info.</h1>
+    <!-- <h1 class="lead m-0">Enter location to find weather info.</h1> -->
+    <div class="cords-weather-con">
+      <app-cords-weather></app-cords-weather>
+    </div>
   </div>
   <div *ngIf='loc'>
     <div class="m-0 mt-1" label="Current Weather">

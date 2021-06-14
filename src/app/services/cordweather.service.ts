@@ -6,9 +6,10 @@ const apiKey: string = environment.apiKey;
 @Injectable({
   providedIn: 'root'
 })
-export class WeatherService {
+
+export class CordService {
   constructor(private http: HttpClient) { }
-  getCurrentWeather(loc: string) {
-    return this.http.get(`${environment.apiUrl}/weather?q=${loc}&appid=${apiKey}`)
+  getCordWeather(lat: number,lon:number) {
+    return this.http.get(`${environment.apiUrl}/weather?lat=${lat}&lon=${lon}&appid=${apiKey}`)
   }
 }
