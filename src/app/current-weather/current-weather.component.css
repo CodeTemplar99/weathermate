@@ -17,3 +17,51 @@ td .lead{
 .weather-info{
   font-weight: normal !important;
 }
+
+@media screen and (max-width: 768px){
+  .weather-body-flex{
+    padding: 10px !important;
+  }
+  .weather-left{
+  width: 60% !important;
+  }
+  .weather-right{
+    width: 40% !important;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .weather-body-flex {
+    padding: 10px !important;
+    flex-direction: column !important;
+  }
+
+  .weather-left {
+    width: 100% !important;
+  }
+  .temprature {
+    font-size: 300%;
+    margin-left: 0 !important;
+  }
+
+  .ballon-img{
+    width: 150px;
+    height: 150px;
+  }
+
+  .weather-right {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width:320px){
+
+  .ballon-img {
+    width: 200px;
+    height: 200px;
+  }
+  .city-flex{
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+}

@@ -13,3 +13,18 @@
 .btn{
   height: 42px;
 }
+
+@media screen and (max-width:768px){
+  .navbar{
+    padding: 3px !important;
+  }
+  .form-group {
+    width: 60% !important;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .form-group {
+    width: 100% !important;
+  }
+}
