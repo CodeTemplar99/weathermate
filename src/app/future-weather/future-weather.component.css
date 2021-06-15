@@ -1,0 +1,10 @@
+.days-flex{
+  column-gap: 10px;
+}
+.days-flex div{
+border: 1px solid red;
+border-radius: 10px;
+height: 240px;
+width: 30%;
+padding: 10px;
+}

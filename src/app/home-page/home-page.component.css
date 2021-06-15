@@ -1,0 +1,7 @@
+.cords-weather-con{
+  width: 85vh;
+}
+.future-weather-con {
+  width: 90%;
+  border: 1px solid red !important;
+}

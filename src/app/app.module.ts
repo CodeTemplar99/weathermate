@@ -22,6 +22,7 @@ import { CordService} from './services/cordweather.service';
 import { CurrentWeatherComponent } from './current-weather/current-weather.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CordsWeatherComponent } from './cords-weather/cords-weather.component';
+import { FutureWeatherComponent } from './future-weather/future-weather.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { CordsWeatherComponent } from './cords-weather/cords-weather.component';
     NavBarComponent,
     CurrentWeatherComponent,
     CordsWeatherComponent,
+    FutureWeatherComponent,
   ],
   imports: [
     BrowserModule,

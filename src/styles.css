@@ -1,4 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-  background: linear-gradient(to right,#c3edf3, #09b1e4 60%);
+  /* background: linear-gradient(to right,#c3d6f3, #1a1d36 60%); */
+  background:#1a2136;
+  font-family: 'Roboto',
+  sans-serif;
 }

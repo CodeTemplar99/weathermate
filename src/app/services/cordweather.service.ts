@@ -11,5 +11,6 @@ export class CordService {
   constructor(private http: HttpClient) { }
   getCordWeather(lat: number,lon:number) {
     return this.http.get(`${environment.apiUrl}/weather?lat=${lat}&lon=${lon}&appid=${apiKey}`)
+    // return this.http.get(`${environment.apiUrl}/onecall?lat=${lat}&lon=${lon}&exclude=hourly,alert,minutely&appid=${apiKey}`)
   }
 }

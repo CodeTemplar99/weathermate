@@ -1,0 +1,33 @@
+.quick-weather-top{
+  border-radius: 30px !important;
+}
+.weather-icon-big{
+  width: 100px;
+  /* height: 100px; */
+}
+.temprature{
+  font-size: 350%;
+  font-weight: lighter;
+}
+
+.small-detail-flex{
+  column-gap: 6% !important;
+}
+
+.small-detail-box{
+  /* min-width: 100px; */
+  width: 120px;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.small-detail-box  i{
+color: #d3d3d3;
+}
+
+.small-detail-text{
+  font-size: 100%;
+  margin: 0;
+}
