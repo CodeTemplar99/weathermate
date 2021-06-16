@@ -40,10 +40,10 @@ export class FutureWeatherComponent implements OnInit {
     this.futureWeather = {};
     this.futureService.getFutureWeather(lat, lon)
       .subscribe(res => {
-        console.log(res);
+        // console.log(res);
         this.futureWeather = res;
       }, err => {
-          console.log(this.futureWeather)
+          // console.log(this.futureWeather)
         if (err.error && err.error.message) {
           alert(err.error.message);
           this.msg = err.error.message;

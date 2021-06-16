@@ -40,10 +40,10 @@ export class CordsWeatherComponent implements OnInit {
     this.cordWeather = {};
     this.cordService.getCordWeather(lat, lon)
       .subscribe(res => {
-        console.log(res);
+        // console.log(res);
         this.cordWeather = res;
       }, err => {
-          console.log(this.cordWeather)
+          // console.log(this.cordWeather)
         if (err.error && err.error.message) {
           alert(err.error.message);
           this.msg = err.error.message;
