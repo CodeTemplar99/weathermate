@@ -33,21 +33,18 @@ color: #00000096;
 }
 
 @media screen and (max-width:425px) {
-.small-detail-flex {
-  /* column-gap: 2% !important; */
-  width: 100%;
-}
-
-
-.small-detail-box {
-  width: auto;
-  column-gap: 5px;
-}
-
-}
-
-@media screen and (max-width:320px) {
   .quick-weather-top {
-    border-radius: 10px !important;
+   border-radius: 4px !important;
   }
+  .small-detail-flex {
+    /* column-gap: 2% !important; */
+    width: 100%;
+  }
+
+
+  .small-detail-box {
+    width: auto;
+    column-gap: 5px;
+  }
+
 }

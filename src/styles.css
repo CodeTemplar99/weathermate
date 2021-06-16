@@ -14,7 +14,8 @@ body {
   linear-gradient(10deg, #b1c9d8 19.9%, #2776aa 50%),
   linear-gradient(145deg, #f4df26 15.9%, #ff1b9a 40%);
   background-repeat: no-repeat;
-  height: 100vh;
+  height:inherit;
+  padding-bottom: 30px;
 }
 
 .weather-icon-big{
