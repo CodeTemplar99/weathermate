@@ -34,7 +34,7 @@ color: #00000096;
 
 @media screen and (max-width:425px) {
   .quick-weather-top {
-   border-radius: 4px !important;
+   border-radius: 8px !important;
   }
   .small-detail-flex {
     /* column-gap: 2% !important; */
