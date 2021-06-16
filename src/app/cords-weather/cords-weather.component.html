@@ -1,10 +1,10 @@
-<div class="jumbotron bg-light p-4 d-flex flex-column align-items-center quick-weather-top">
+<div class="jumbotron m-0 bg-light p-4 d-flex flex-column align-items-center quick-weather-top">
   <span class="small text-secondary font-weight-light"> <i class="fa fa-map-marker"></i> Your location now</span>
   <h4 class="lead mt-1">{{cordWeather.name}}</h4>
   <img class="weather-icon-big"
     src="https://openweathermap.org/img/w/{{cordWeather.weather && cordWeather.weather[0].icon}}.png">
   <h1 class=" temprature">{{cordWeather.main?.temp - 273.15 | number:'1.0-0'}}<sup>o</sup></h1>
-  <span class="small text-white d-inline-block text-capitalize bg-info p-1 mt-1 mb-4 rounded-pill">
+  <span class="small text-white d-inline-block text-capitalize bg-info p-1 px-2 mt-1 mb-3 rounded-pill">
     {{cordWeather.weather && cordWeather.weather[0].description}}</span>
   <div class="d-flex justify-content-center small-detail-flex">
     <div class="small-detail-box">
@@ -20,6 +20,4 @@
       <h4 class="small-detail-text">{{cordWeather.wind?.speed}}ms<sup>-1</sup></h4>
     </div>
   </div>
-
-
 </div>
