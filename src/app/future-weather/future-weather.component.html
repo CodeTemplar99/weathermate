@@ -12,7 +12,7 @@
   </div>
   <div class="jumbotron bg-light">
     <h6 class="small">{{futureWeather.daily[1].weather && futureWeather.daily[1].dt * 1000 | date}}</h6>
-    <img class="weather-icon"
+    <img class="weather-icon icon-mover1"
       src="https://openweathermap.org/img/w/{{futureWeather.daily[1] && futureWeather.daily[1].weather[0].icon}}.png">
 
     <h4>{{futureWeather.daily[1].weather && futureWeather.daily[1].temp.day - 273.15 |number:'1.0-0'}}<sup>o</sup>
@@ -30,7 +30,7 @@
   </div>
   <div class="jumbotron bg-light">
     <h6 class="small">{{futureWeather.daily[3].weather && futureWeather.daily[3].dt * 1000 | date}}</h6>
-    <img class="weather-icon"
+    <img class="weather-icon icon-mover1"
       src="https://openweathermap.org/img/w/{{futureWeather.daily[3] && futureWeather.daily[3].weather[0].icon}}.png">
 
     <h4>{{futureWeather.daily[3].weather && futureWeather.daily[3].temp.day - 273.15 |number:'1.0-0'}}<sup>o</sup>

@@ -16,3 +16,87 @@ body {
   background-repeat: no-repeat;
   height: 100vh;
 }
+
+.weather-icon-big{
+-webkit-animation: big-icon 1s infinite alternate-reverse ;
+animation: big-icon 1.5s infinite alternate-reverse;
+}
+
+img.weather-icon {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 2s infinite alternate;
+}
+
+img.icon-mover1 {
+  -webkit-animation: mover 2s infinite alternate-reverse;
+  animation: mover1 2s 1s infinite alternate-reverse;
+}
+
+
+/* img.vert-move {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+} */
+
+
+@-webkit-keyframes big-icon {
+  0% {
+    transform: translateY(0);
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+    transform: translateX(0px);
+  }
+}
+
+@keyframes big-icon {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@-webkit-keyframes mover1 {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes mover1 {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
