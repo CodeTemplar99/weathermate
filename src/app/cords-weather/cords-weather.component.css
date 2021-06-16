@@ -3,7 +3,6 @@
 }
 .weather-icon-big{
   width: 100px;
-  /* height: 100px; */
 }
 .temprature{
   font-size: 350%;
@@ -12,6 +11,7 @@
 
 .small-detail-flex{
   column-gap: 6% !important;
+  /* border: 1px solid red; */
 }
 
 .small-detail-box{
@@ -24,10 +24,30 @@
 }
 
 .small-detail-box  i{
-color: #d3d3d3;
+color: #00000096;
 }
 
 .small-detail-text{
   font-size: 100%;
   margin: 0;
+}
+
+@media screen and (max-width:425px) {
+.small-detail-flex {
+  /* column-gap: 2% !important; */
+  width: 100%;
+}
+
+
+.small-detail-box {
+  width: auto;
+  column-gap: 5px;
+}
+
+}
+
+@media screen and (max-width:320px) {
+  .quick-weather-top {
+    border-radius: 10px !important;
+  }
 }

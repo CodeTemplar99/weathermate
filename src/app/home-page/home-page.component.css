@@ -1,7 +1,36 @@
 .cords-weather-con{
-  width: 85vh;
+  width: 40%;
 }
 .future-weather-con {
-  width: 90%;
-  border: 1px solid red !important;
+  width: 50%;
+}
+
+@media screen and (max-width:768px){
+  .cords-weather-con {
+    width: 80%;
+  }
+
+  .future-weather-con {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width:375px) {
+  .cords-weather-con {
+    width: 90%;
+  }
+
+  .future-weather-con {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width:320px) {
+  .cords-weather-con {
+    width: 95%;
+  }
+
+  .future-weather-con {
+    width: 100%;
+  }
 }

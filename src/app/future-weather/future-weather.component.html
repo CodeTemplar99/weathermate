@@ -1,6 +1,40 @@
-<div class="d-flex justify-content-center bg-white days-flex">
-  <div class="jumbotron">Lorem, ipsum dolor.</div>
-  <div class="jumbotron">Lorem, ipsum dolor.</div>
-  <div class="jumbotron">Lorem, ipsum dolor.</div>
-  <div class="jumbotron">Lorem, ipsum dolor.</div>
+<p class=" small text-secondary d-inline-block mx-2 mt-3 mb-1 view-days">View all 7 days<span><i
+      class="fa fa-arrow-right mx-2"></i></span></p>
+<div class="d-flex justify-content-start days-flex">
+  <div class="jumbotron bg-light">
+    <h6 class="small">{{futureWeather.daily[0].weather && futureWeather.daily[0].dt * 1000 | date}}</h6>
+    <img class="weather-icon"
+      src="https://openweathermap.org/img/w/{{futureWeather.daily[0] && futureWeather.daily[0].weather[0].icon}}.png">
+
+    <h4>{{futureWeather.daily[0].weather && futureWeather.daily[0].temp.day - 273.15 |number:'1.0-0'}}<sup>o</sup>
+    </h4>
+    <h6>{{futureWeather.daily[0].weather && futureWeather.daily[0].weather[0].description}}</h6>
+  </div>
+  <div class="jumbotron bg-light">
+    <h6 class="small">{{futureWeather.daily[1].weather && futureWeather.daily[1].dt * 1000 | date}}</h6>
+    <img class="weather-icon"
+      src="https://openweathermap.org/img/w/{{futureWeather.daily[1] && futureWeather.daily[1].weather[0].icon}}.png">
+
+    <h4>{{futureWeather.daily[1].weather && futureWeather.daily[1].temp.day - 273.15 |number:'1.0-0'}}<sup>o</sup>
+    </h4>
+    <h6>{{futureWeather.daily[1].weather && futureWeather.daily[1].weather[0].description}}</h6>
+  </div>
+  <div class="jumbotron bg-light">
+    <h6 class="small">{{futureWeather.daily[2].weather && futureWeather.daily[2].dt * 1000 | date}}</h6>
+    <img class="weather-icon"
+      src="https://openweathermap.org/img/w/{{futureWeather.daily[2] && futureWeather.daily[2].weather[0].icon}}.png">
+
+    <h4>{{futureWeather.daily[2].weather && futureWeather.daily[2].temp.day - 273.15 |number:'1.0-0'}}<sup>o</sup>
+    </h4>
+    <h6>{{futureWeather.daily[2].weather && futureWeather.daily[2].weather[0].description}}</h6>
+  </div>
+  <div class="jumbotron bg-light">
+    <h6 class="small">{{futureWeather.daily[3].weather && futureWeather.daily[3].dt * 1000 | date}}</h6>
+    <img class="weather-icon"
+      src="https://openweathermap.org/img/w/{{futureWeather.daily[3] && futureWeather.daily[3].weather[0].icon}}.png">
+
+    <h4>{{futureWeather.daily[3].weather && futureWeather.daily[3].temp.day - 273.15 |number:'1.0-0'}}<sup>o</sup>
+    </h4>
+    <h6>{{futureWeather.daily[3].weather && futureWeather.daily[3].weather[0].description}}</h6>
+  </div>
 </div>

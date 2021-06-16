@@ -50,9 +50,7 @@ export class CordsWeatherComponent implements OnInit {
           return;
         }
         alert('Failed to get weather info.');
-      }, () => {})
-  }
-  resultFound() {
-    return Object.keys(this.cordWeather).length > 0;
+      }, () => { })
+    return
   }
 }

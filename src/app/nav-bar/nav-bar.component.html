@@ -1,4 +1,4 @@
-<div class="jumbotron bg-white p-1 m-0 mx-2 rounded border shadow-sm">
+<div class="jumbotron bg-white p-1 m-0 mt-1 mx-2 rounded border shadow-sm sticky-top">
   <form class="d-flex justify-content-start" (ngSubmit)='search(searchForm)' #searchForm='ngForm'>
     <div class="form-group col-4">
       <label *ngIf="lo.invalid && (lo.dirty || lo.touched)"><span class="text-danger" *ngIf='lo.errors'>
