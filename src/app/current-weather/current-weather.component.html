@@ -9,7 +9,7 @@
     </div>
     <div class="d-flex justify-content-start align-items-center city-flex">
 
-      <h1 class="mx-4 temprature">{{currentWeather.main?.temp - 273.15 | number:'1.0-0'}}<sup>o</sup>C</h1>
+      <h1 class="mx-4 temprature">{{currentWeather.main?.temp - 273.15 | number:'1.0-0'}}<sup>o</sup></h1>
       <div>
         <h4 class="mb-0" *ngIf='resultFound()'>{{currentWeather.name}}</h4>
         <span class="small">{{currentWeather.dt*1000 | date:'medium'}}</span>
@@ -21,23 +21,23 @@
       <tbody>
         <tr>
           <td>
-            <h6 class="lead m-0"> <span><i class="fa fa-thermometer-full"></i></span> Maximum Temperature:</h6>
+            <h6 class="small text-muted m-0"> <span><i class="fa fa-thermometer-full"></i></span> Maximum Temperature:</h6>
           </td>
           <td>
-            <h6 class="weather-info m-0"> {{currentWeather.main?.temp - 273.15 | number:'1.0-0'}}<sup>o</sup>C</h6>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <h6 class="lead m-0"> <span><i class="fa fa-thermometer-half"></i></span> Minimum Temperature:</h6>
-          </td>
-          <td>
-            <h6 class="weather-info m-0"> {{currentWeather.main?.temp_min - 273.15 | number:'1.0-0'}}<sup>o</sup>C</h6>
+            <h6 class="weather-info m-0"> {{currentWeather.main?.temp - 273.15 | number:'1.0-0'}}<sup>o</sup></h6>
           </td>
         </tr>
         <tr>
           <td>
-            <h6 class="lead m-0"> <span><i class="fa fa-cloud"></i></span> Clouds:</h6>
+            <h6 class="small text-muted m-0"> <span><i class="fa fa-thermometer-half"></i></span> Minimum Temperature:</h6>
+          </td>
+          <td>
+            <h6 class="weather-info m-0"> {{currentWeather.main?.temp_min - 273.15 | number:'1.0-0'}}<sup>o</sup></h6>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h6 class="small text-muted m-0"> <span><i class="fa fa-cloud"></i></span> Clouds:</h6>
           </td>
           <td>
             <h6 class="weather-info m-0"> {{currentWeather.clouds?.all}}%</h6>
@@ -45,7 +45,7 @@
         </tr>
         <tr>
           <td>
-            <h6 class="lead m-0"> <span><i class="fa fa-tint"></i></span> Humidity:</h6>
+            <h6 class="small text-muted m-0"> <span><i class="fa fa-tint"></i></span> Humidity:</h6>
           </td>
           <td>
             <h6 class="weather-info m-0"> {{currentWeather.main?.humidity}}%</h6>
@@ -53,7 +53,7 @@
         </tr>
         <tr>
           <td>
-            <h6 class="lead m-0"> <span><i class="fa fa-arrow-down"></i></span> Pressure:</h6>
+            <h6 class="small text-muted m-0"> <span><i class="fa fa-arrow-down"></i></span> Pressure:</h6>
           </td>
           <td>
             <h6 class="weather-info m-0"> {{currentWeather.main?.pressure}}mb</h6>
@@ -61,7 +61,7 @@
         </tr>
         <tr>
           <td>
-            <h6 class="lead m-0"> <span><i class="fa fa-sun-o"></i><i class="fa fa-caret-up"></i></span> Sunrise:</h6>
+            <h6 class="small text-muted m-0"> <span><i class="fa fa-sun-o"></i><i class="fa fa-caret-up"></i></span> Sunrise:</h6>
           </td>
           <td>
             <h6 class="weather-info m-0"> {{currentWeather.sys?.sunrise*1000 | date:'medium'}}
@@ -70,7 +70,7 @@
         </tr>
         <tr>
           <td>
-            <h6 class="lead m-0"> <span><i class="fa fa-sun-o"></i><i class="fa fa-caret-down"></i></span> Sunset:</h6>
+            <h6 class="small text-muted m-0"> <span><i class="fa fa-sun-o"></i><i class="fa fa-caret-down"></i></span> Sunset:</h6>
           </td>
           <td>
             <h6 class="weather-info m-0"> {{currentWeather.sys?.sunset*1000 | date:'medium'}}
@@ -79,7 +79,7 @@
         </tr>
         <tr>
           <td>
-            <h6 class="lead m-0"> <span><i class="fa fa-eye"></i></span> Visibility:</h6>
+            <h6 class="small text-muted m-0"> <span><i class="fa fa-eye"></i></span> Visibility:</h6>
           </td>
           <td>
             <h6 class="weather-info m-0"> {{currentWeather.visibility}}m</h6>
