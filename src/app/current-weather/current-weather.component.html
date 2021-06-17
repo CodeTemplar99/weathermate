@@ -1,9 +1,11 @@
-<div class="weather-body-flex d-flex justify-content-between">
+<div *ngIf='resultFound()' class="weather-body-flex d-flex justify-content-between">
   <div
     class="jumbotron p-4 m-0 bg-light d-flex flex-column justify-content-between align-items-around col-7 weather-left">
-    <a class="navbar-brand" href="#">Weathermate.io</a>
-    <div *ngIf='resultFound()' class="jumbotron d-flex justify-content-end p-3">
-      <img class="img-fluid ballon-img" src="assets/images/air-balloon.png" alt="">
+    <!-- <a class="navbar-brand" href="#">Weathermate.io</a> -->
+    <div class="jumbotron d-flex justify-content-end p-3">
+      <!-- <img class="img-fluid ballon-img" src="assets/images/air-balloon.png" alt=""> -->
+      <img class="weather-icon-big ballon-img"
+        src="https://openweathermap.org/img/w/{{currentWeather.weather && currentWeather.weather[0].icon}}.png">
     </div>
     <div class="d-flex justify-content-start align-items-center city-flex">
 
