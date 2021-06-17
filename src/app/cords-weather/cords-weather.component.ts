@@ -1,8 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Store, select } from '@ngrx/store';
 import { CordService } from '../services/cordweather.service';
-import { AfterViewInit, ElementRef, ViewChild } from '@angular/core';
 
 interface Cord {
   lat: number;
@@ -20,6 +19,9 @@ export class CordsWeatherComponent implements OnInit {
   cord!: Cord;
   cordWeather: any = <any>{};
   msg!: string;
+  name = "Angular";
+    
+
   constructor(
     private store: Store<any>,
     private cordService: CordService
@@ -43,12 +45,8 @@ export class CordsWeatherComponent implements OnInit {
       .subscribe(res => {
         // console.log(res);
         this.cordWeather = res;
+        
         if (res) {
-          // @ViewChild('layered') layered: ElementRef;
-
-          // console.log(this.layered.nativeElement.innerHTML);
-          
-          // document.getElementById('').style.display = 'none !important'
         }
       }, err => {
           // console.log(this.cordWeather)
