@@ -71,8 +71,7 @@ margin-bottom: 5px;
 
   .city {
     top: 10%;
-    /* right: 40%; */
-    margin: auto;
+    right: 40%;
   }
   .quick-weather-top {
   top: 12% !important;
