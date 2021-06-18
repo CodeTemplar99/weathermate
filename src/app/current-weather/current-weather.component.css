@@ -1,10 +1,21 @@
+ .weather-body-flex{
+   align-items: center;
+   height: 80vh ;
+ }
  .weather-left {
    border-radius: 10px 0px 0px 10px;
   }
   
   .weather-right {
    border-radius: 0px 10px 10px 0px;
- }
+   background: rgba(225, 225, 225, 0.1);
+   border-top: 1px solid rgba(225, 225, 225, 0.4);
+   border-left: 1px solid rgba(225, 225, 225, 0.2);
+   border-right: thin solid rgba(225, 225, 225, 0.3);
+   border-bottom: 1px solid rgba(225, 225, 225, 0.1);
+   backdrop-filter: blur(12px);
+   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  }
 
 .ballon-img{
 height: 250px;
@@ -15,8 +26,17 @@ width: 250px;
   font-size: 400%;
 }
 
+/* table tr:nth-child(odd) td {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+table tr:nth-child(even) td {
+  background-color: rgba(211, 211, 211, 0.534);
+} */
+
 td{
   vertical-align: middle !important;
+  color: white;
 }
 
 td .lead{
@@ -29,6 +49,7 @@ td .lead{
 @media screen and (max-width: 768px){
   .weather-body-flex{
     padding: 10px !important;
+    height: 100vh;
   }
   .weather-left{
   width: 60% !important;
@@ -42,6 +63,7 @@ td .lead{
   .weather-body-flex {
     padding: 10px !important;
     flex-direction: column !important;
+    height: auto;
   }
 
   .weather-left {

@@ -11,7 +11,9 @@
   background-color: rgba(180, 190, 203, 0.4);
 } */
 .btn{
-  height: 42px;
+  color: white;
+  border-radius:6px !important;
+  background: #2980b9;
 }
 
 @media screen and (max-width:768px){

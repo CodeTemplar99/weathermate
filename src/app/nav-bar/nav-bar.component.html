@@ -1,4 +1,4 @@
-<div class="jumbotron bg-white p-1 m-0 mt-1 mx-2 rounded border shadow-sm sticky-top">
+<div class="jumbotron p-1 m-0">
   <form class="d-flex justify-content-start" (ngSubmit)='search(searchForm)' #searchForm='ngForm'>
     <div class="form-group col-4">
       <label *ngIf="lo.invalid && (lo.dirty || lo.touched)"><span class="text-danger" *ngIf='lo.errors'>
@@ -6,9 +6,9 @@
         </span>
       </label>
       <div class="d-flex">
-        <input class="form-control p-2" matInput placeholder="Enter your location..." [(ngModel)]='loc' #lo='ngModel'
+        <input class="form-control p-2 bg-light" matInput placeholder="search your location..." [(ngModel)]='loc' #lo='ngModel'
           name='lo' required type='search' autocomplete="on">
-        <button class="btn btn-outline-primary rounded mx-1" type='submit'>Search</button>
+        <button class="btn rounded mx-1" type='submit'><i class="fa fa-search"></i></button>
       </div>
     </div>
   </form>
