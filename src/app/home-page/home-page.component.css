@@ -19,6 +19,7 @@
 }
 .future-weather-con {
   width: 50%;
+  position: relative;
 }
 
 @keyframes spin {

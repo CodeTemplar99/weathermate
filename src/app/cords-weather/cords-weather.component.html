@@ -1,23 +1,23 @@
 <div class="jumbotron m-0 bg-light p-4 d-flex flex-column align-items-center quick-weather-top">
   <span class="small text-secondary font-weight-light"> <i class="fa fa-map-marker"></i> Your location now</span>
-  <h4 class="lead mt-1">{{cordWeather.name}}</h4>
-  <img class="weather-icon-big"
+  <h6 class="lead m-0">{{cordWeather.name}}</h6>
+  <img class="weather-icon-big image-fluid"
     src="https://openweathermap.org/img/w/{{cordWeather.weather && cordWeather.weather[0].icon}}.png">
-  <h1 class=" temprature">{{cordWeather.main?.temp - 273.15 | number:'1.0-0'}}<sup>o</sup></h1>
-  <span class="small text-white d-inline-block text-capitalize bg-info p-1 px-2 mt-1 mb-3 rounded-pill">
+  <h1 class=" my-1 temprature">{{cordWeather.main?.temp - 273.15 | number:'1.0-0'}}<sup>o</sup></h1>
+  <span class="small text-white d-inline-block text-capitalize bg-info p-1 px-2 mt-1 mb-0 rounded-pill">
     {{cordWeather.weather && cordWeather.weather[0].description}}</span>
-  <div class="d-flex justify-content-center small-detail-flex">
+  <div class="d-flex justify-content-center small-detail-flex mt-3">
     <div class="small-detail-box">
       <i class="fa fa-tint"></i>
-      <h4 class="small-detail-text">{{cordWeather.main?.humidity}}%</h4>
+      <h6 class="small-detail-text">{{cordWeather.main?.humidity}}%</h6>
     </div>
     <div class="small-detail-box">
       <i class="fa fa-arrow-down"></i>
-      <h4 class="small-detail-text">{{cordWeather.main?.pressure}}mb</h4>
+      <h6 class="small-detail-text">{{cordWeather.main?.pressure}}mb</h6>
     </div>
     <div class="small-detail-box">
       <i class="fa fa-mixcloud"></i>
-      <h4 class="small-detail-text">{{cordWeather.wind?.speed}}ms<sup>-1</sup></h4>
+      <h6 class="small-detail-text">{{cordWeather.wind?.speed}}ms<sup>-1</sup></h6>
     </div>
   </div>
 </div>
