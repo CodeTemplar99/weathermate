@@ -1,19 +1,10 @@
-/* body {
-  font-family: Montserrat, sans-serif;
+.sticky-top{
+  background: #f3faff;
 }
-
-.navbar-brand {
-  width: 48px;
-  height: 48px;
-}
-
-.navbar-nav .nav-item:hover {
-  background-color: rgba(180, 190, 203, 0.4);
-} */
 .btn{
   color: white;
   border-radius:6px !important;
-  background: #2980b9;
+  background: #790fb6c9;
 }
 
 @media screen and (max-width:768px){

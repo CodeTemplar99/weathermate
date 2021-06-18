@@ -3,17 +3,19 @@
    height: 80vh ;
  }
  .weather-left {
+   color: black;
    border-radius: 10px 0px 0px 10px;
+  /* background: radial-gradient(farthest-corner at 200px 0px, pink, #790fb6 2%, #eeba10cb); */
   }
   
   .weather-right {
    border-radius: 0px 10px 10px 0px;
-   background: rgba(225, 225, 225, 0.1);
+  background: radial-gradient(farthest-corner at 400px 0px, pink, #790fb6 2%, #eeba10cb);
    border-top: 1px solid rgba(225, 225, 225, 0.4);
    border-left: 1px solid rgba(225, 225, 225, 0.2);
    border-right: thin solid rgba(225, 225, 225, 0.3);
    border-bottom: 1px solid rgba(225, 225, 225, 0.1);
-   backdrop-filter: blur(12px);
+   backdrop-filter: blur(40px);
    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
   }
 

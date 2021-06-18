@@ -4,20 +4,10 @@
 transition: all 0.3s;
 }
 body {
-  /* background: linear-gradient(to right, #157fb1, #09b1e4 60%); */
-  background:linear-gradient(to bottom, #005b9b, #1c1c1c);
-  /* background:#1a2136; */
+  background:#f4f7fa;
   font-family: 'Roboto',
   sans-serif;
-  /* background-color: #2980b9; */
-  /* background-color: #2980b9; */
-  /* background: linear-gradient(215deg, #71b073 29.9%, #2776aa 80%),
-  linear-gradient(304deg, rgba(255, 101, 53, 0.4) 24.9%, #aa2743 91%),
-  linear-gradient(10deg, #b1c9d8 19.9%, #2776aa 50%),
-  linear-gradient(145deg, #f4df26 15.9%, #ff1b9a 40%); */
-  background-repeat: no-repeat;
-  /* height:120vh; */
-  padding-bottom: 5%;
+  /* padding-bottom: 5%; */
 }
 
 .weather-icon-big{
@@ -45,11 +35,11 @@ img.icon-mover1 {
 @-webkit-keyframes big-icon {
   0% {
     transform: translateY(0);
-    transform: translateX(-10px);
+    transform: translateX(-5px);
   }
 
   100% {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
     transform: translateX(0px);
   }
 }
@@ -60,7 +50,7 @@ img.icon-mover1 {
   }
 
   100% {
-    transform: translateY(-10px);
+    transform: translateY(-3px);
   }
 }
 
@@ -70,7 +60,7 @@ img.icon-mover1 {
   }
 
   100% {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
   }
 }
 
@@ -80,7 +70,7 @@ img.icon-mover1 {
   }
 
   100% {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
   }
 }
 
@@ -90,7 +80,7 @@ img.icon-mover1 {
   }
 
   100% {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
   }
 }
 
@@ -100,6 +90,6 @@ img.icon-mover1 {
   }
 
   100% {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
   }
 }
