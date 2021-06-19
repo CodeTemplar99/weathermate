@@ -2,13 +2,13 @@
   position: absolute;
   top: 15px;
   right: 47%;
-  z-index: inherit;
+  /* z-index: inherit; */
 }
 .quick-weather-top{
   color: white;
   border-radius: 24% !important;
   min-width: 220px;
-  height: 220px;
+  height: 200px;
   padding: 10px 5px 10px 5px;
   margin: auto;
   position: relative;
@@ -28,7 +28,7 @@
   width: 100px;
 }
 .temprature{
-  font-size: 700%;
+  font-size: 600%;
   font-weight: lighter;
   margin-top: 2% !important;
 }
@@ -70,6 +70,7 @@ margin-bottom: 5px;
   .city {
     top: 10%;
     right: 45%;
+    z-index: inherit;
   }
   .quick-weather-top {
     top: 12% !important;
