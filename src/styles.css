@@ -7,7 +7,6 @@ body {
   background:#f4f7fa;
   font-family: 'Roboto',
   sans-serif;
-  /* padding-bottom: 5%; */
 }
 
 .weather-icon-big{
@@ -24,13 +23,6 @@ img.icon-mover1 {
   -webkit-animation: mover 2s infinite alternate-reverse;
   animation: mover1 2s 1s infinite alternate-reverse;
 }
-
-
-/* img.vert-move {
-  -webkit-animation: mover 1s infinite alternate;
-  animation: mover 1s infinite alternate;
-} */
-
 
 @-webkit-keyframes big-icon {
   0% {

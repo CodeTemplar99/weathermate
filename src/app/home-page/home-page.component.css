@@ -17,14 +17,12 @@
 .cords-weather-con{
   width: 100%;
   height: 330px;
-  /* border: 1px solid red; */
   padding: 20px;
   background: linear-gradient(to bottom, #f3faff ,#790fb621);
 }
 .future-weather-con {
   width: 50%;
   position: relative;
-  /* border: 1px solid red; */
   position: relative;
   margin-top: 5% !important;
   margin-bottom: 0 !important;

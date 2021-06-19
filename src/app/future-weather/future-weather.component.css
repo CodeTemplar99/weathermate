@@ -8,7 +8,6 @@
   overflow-x: scroll !important;
   height: auto;
   padding: 10px;
-  /* border: 1px solid red; */
 }
 .days-flex div{
   display: flex;
@@ -37,10 +36,6 @@
 .days-flex div .weather-icon{
   width: 45%;
 }
-
-/* .view-days{
-  border-radius: 10px
-} */
 
 @media screen and (max-width:768px){
 
