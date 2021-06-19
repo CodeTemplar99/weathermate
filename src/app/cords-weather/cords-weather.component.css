@@ -2,6 +2,7 @@
   position: absolute;
   top: 15px;
   right: 47%;
+  z-index: inherit;
 }
 .quick-weather-top{
   color: white;
@@ -64,33 +65,47 @@ margin-bottom: 5px;
   margin-bottom: 5px;
 }
 
-@media screen and (max-width:425px) {
+@media screen and (max-width:768px) {
 
   .city {
     top: 10%;
-    right: 40%;
+    right: 45%;
   }
   .quick-weather-top {
-  top: 12% !important;
+    top: 12% !important;
+  }
+}
+
+@media screen and (max-width:425px) {
+
+  .city {
+    right: 41% !important;
   }
   .small-detail-flex {
     padding: 10px;
     min-width: 60vh;
+    justify-content: space-around !important;
   }
 
   .small-detail-box {
     width: auto;
-    column-gap: 5px;
   }
 
 }
 
-@media screen and (max-width:425px) {
+@media screen and (max-width:375px) {
   .city {
-    right: 37%;
+    right: 39% !important;
   }
   .small-detail-flex {
     padding: 10px;
-    min-width: 45vh;
+    min-width: 55vh;
+  }
+}
+
+@media screen and (max-width:320px) {
+  .small-detail-flex {
+    padding: 10px;
+    min-width: 50vh;
   }
 }
