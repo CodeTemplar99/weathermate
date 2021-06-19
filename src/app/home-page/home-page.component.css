@@ -16,7 +16,7 @@
 }
 .cords-weather-con{
   width: 100%;
-  height: 330px;
+  height: 320px;
   padding: 20px;
   background: linear-gradient(to bottom, #f3faff ,#790fb621);
 }
@@ -40,7 +40,7 @@
 
 @media screen and (max-width:768px){
   .cords-weather-con {
-    height: 370px;
+    height: 350px;
     width: 100%;
   }
 
@@ -50,9 +50,9 @@
   }
 }
 @media screen and (max-width:425px) {
-  /* .cords-weather-con {
-    height: 370px;
-  } */
+  .cords-weather-con {
+    height: 340px;
+  }
 .future-weather-con {
   margin-top: 15% !important;
 }
