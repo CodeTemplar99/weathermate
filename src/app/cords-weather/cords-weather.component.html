@@ -1,29 +1,41 @@
-  <h6 class="lead m-0 text-center city sticky-top"><i class="fa fa-map-marker text-muted mx-1"></i>{{cordWeather.name}}</h6>
-  <div class="jumbotron m-0 bg-light d-flex flex-column justify-content-center align-items-center quick-weather-top">
-    <h6 class="small top-time">{{cordWeather.dt && cordWeather.dt * 1000 | date}}</h6>
-    <span class="d-inline-block text-capitalize mt-1 mb-0 rounded-pill top-description">
-      {{cordWeather.weather && cordWeather.weather[0].description}}</span>
-    <h1 class="m-0 temprature">{{cordWeather.main?.temp - 273.15 | number:'1.0-0'}}<sup><span
-          class="small">o</span></sup></h1>
-    <img class="weather-icon-big image-fluid"
-      src="https://openweathermap.org/img/w/{{cordWeather.weather && cordWeather.weather[0].icon}}.png">
-    <div class="jumbotron d-flex justify-content-center small-detail-flex mt-3">
-      <div class="small-detail-box">
-        <i class="fa fa-mixcloud"></i>
-        <h6 class="small-detail-text">{{cordWeather.wind?.speed}}ms<sup>-1</sup></h6>
-        <span class="text-muted small">Wind</span>
-      </div>
+<div class="jumbotron m-0 bg-light d-flex flex-column justify-content-center align-items-center quick-weather-top">
+  <ul class="quick-ul">
+    <li class="city-li">
+      <h6 class="lead m-0 text-center city sticky-top"><i
+          class="fa fa-map-marker text-muted mx-1"></i>{{cordWeather.name}}
+      </h6>
+    </li>
+    <li class="date-li">
+      <h6 class="small top-time m-0">{{cordWeather.dt && cordWeather.dt * 1000 | date}}</h6>
+    </li>
+    <li class="description-li">
+      <span class="d-inline-block text-capitalize m-0 rounded-pill top-description">
+        {{cordWeather.weather && cordWeather.weather[0].description}}</span></li>
+    <li class="temparature-li">
+      <h1 class="m-0 temprature">{{cordWeather.main?.temp - 273.15 | number:'1.0-0'}}<sup><span
+            class="small">o</span></sup></h1>
+    </li>
 
-      <div class="small-detail-box">
-        <i class="fa fa-tint"></i>
-        <h6 class="small-detail-text">{{cordWeather.main?.humidity}}%</h6>
-        <span class="text-muted small">Humidity</span>
-      </div>
-      <div class="small-detail-box">
-        <i class="fa fa-eye"></i>
-        <h6 class="small-detail-text">{{cordWeather.visibility}}km</h6>
-        <span class="text-muted small">Visibility</span>
-      </div>
-
+    <li class="icon-li"><img class="weather-icon-big image-fluid"
+        src="https://openweathermap.org/img/w/{{cordWeather.weather && cordWeather.weather[0].icon}}.png"></li>
+  </ul>
+  <div class="jumbotron d-flex justify-content-center small-detail-flex mt-3">
+    <div class="small-detail-box">
+      <i class="fa fa-mixcloud"></i>
+      <h6 class="small-detail-text">{{cordWeather.wind?.speed}}ms<sup>-1</sup></h6>
+      <span class="text-muted small">Wind</span>
     </div>
+
+    <div class="small-detail-box">
+      <i class="fa fa-tint"></i>
+      <h6 class="small-detail-text">{{cordWeather.main?.humidity}}%</h6>
+      <span class="text-muted small">Humidity</span>
+    </div>
+    <div class="small-detail-box">
+      <i class="fa fa-eye"></i>
+      <h6 class="small-detail-text">{{cordWeather.visibility}}km</h6>
+      <span class="text-muted small">Visibility</span>
+    </div>
+
   </div>
+</div>
