@@ -28,7 +28,7 @@
   width: 130px;
   height: inherit;
   margin-top: -40px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .temprature{
   font-size: 600%;

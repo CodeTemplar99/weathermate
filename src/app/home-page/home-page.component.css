@@ -19,7 +19,7 @@
   height: 320px;
   padding: 20px;
   background: linear-gradient(to bottom, #f3faff ,#790fb621);
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .future-weather-con {
   width: 50%;
