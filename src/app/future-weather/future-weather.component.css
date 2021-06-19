@@ -1,7 +1,3 @@
-.view-days{
-  cursor: pointer;
-}
-
 .days-flex{
   column-gap: 20px;
   overflow-y: hidden;
