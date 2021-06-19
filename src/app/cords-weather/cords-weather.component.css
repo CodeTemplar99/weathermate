@@ -26,7 +26,7 @@
 }
 .weather-icon-big{
   width: 130px;
-  height: auto;
+  height: inherit;
   margin-top: -40px;
   border: 1px solid red;
 }
@@ -103,11 +103,12 @@ margin-bottom: 5px;
 
 @media screen and (max-width:375px) {
   .city {
+    top:11% ;
     right: 39% !important;
   }
   .small-detail-flex {
     padding: 10px;
-    min-width: 150%;
+    width: 150%;
     column-gap: 13px;
   }
 }
@@ -115,6 +116,6 @@ margin-bottom: 5px;
 @media screen and (max-width:320px) {
   .small-detail-flex {
     padding: 10px;
-    min-width: 50vh;
+    width: 130%;
   }
 }
