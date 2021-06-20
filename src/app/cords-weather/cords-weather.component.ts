@@ -44,7 +44,7 @@ export class CordsWeatherComponent implements OnInit {
     // setInterval(() => {
     this.cordService.getCordWeather(lat, lon)
       .subscribe(res => {
-        console.log(res);
+        // console.log(res);
         this.cordWeather = res;
         
         if (res) {
