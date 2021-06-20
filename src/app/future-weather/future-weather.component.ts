@@ -38,12 +38,13 @@ export class FutureWeatherComponent implements OnInit {
   searchWeather(lat: number, lon: number) {
     this.msg = '';
     this.futureWeather = {};
-    this.futureService.getFutureWeather(lat, lon)
+    setInterval(() => {
+      this.futureService.getFutureWeather(lat, lon)
       .subscribe(res => {
         // console.log(res);
         this.futureWeather = res;
       }, err => {
-          // console.log(this.futureWeather)
+        // console.log(this.futureWeather)
         if (err.error && err.error.message) {
           alert(err.error.message);
           this.msg = err.error.message;
@@ -51,7 +52,8 @@ export class FutureWeatherComponent implements OnInit {
         }
         alert('Failed to get weather info.');
       }, () => { })
-    return
+      return
+    }, 3000)
   }
 }
 

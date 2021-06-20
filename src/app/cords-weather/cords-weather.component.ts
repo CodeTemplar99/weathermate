@@ -41,9 +41,10 @@ export class CordsWeatherComponent implements OnInit {
   searchWeather(lat: number, lon: number) {
     this.msg = '';
     this.cordWeather = {};
+    // setInterval(() => {
     this.cordService.getCordWeather(lat, lon)
       .subscribe(res => {
-        // console.log(res);
+        console.log(res);
         this.cordWeather = res;
         
         if (res) {
@@ -58,5 +59,6 @@ export class CordsWeatherComponent implements OnInit {
         alert('Failed to get weather info.');
       }, () => { })
     return
+    // }, 120000)
   }
 }
